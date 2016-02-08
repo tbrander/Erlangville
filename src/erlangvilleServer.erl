@@ -1,3 +1,5 @@
+%% Authors Christian Dakermandji, Thomas Brander
+
 -module(erlangvilleServer).
 -behaviour(gen_fsm).
 
@@ -54,6 +56,4 @@ full(_Other, From, {Total, Occupied})->
 getInfo(Total, Occupied) ->
 	{ok, [{total, Total}, {occupied, Occupied}, {free, (Total-Occupied)}]}.
 
-%% Occupied=0 betyder tom docka
-		
 	

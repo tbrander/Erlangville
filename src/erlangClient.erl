@@ -1,3 +1,5 @@
+%% Authors Christian Dakermandji, Thomas Brander
+
 -module(erlangClient).
 
 -export([start_link/2, stop/1]).
